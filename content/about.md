@@ -1,25 +1,26 @@
 +++
 title = "About"
-description = "Hugo, the world's fastest framework for building websites"
-date = "2019-02-28"
-aliases = ["about-us", "about-hugo", "contact"]
-author = "Hugo Authors"
+description = "Jajoglowy, created by passionate for passionates"
+date = "2022-09-26"
+aliases = ["about-us", "about-jajoglowy", "contact"]
+author = "Piotr Fraszczak"
 +++
 
-Written in Go, Hugo is an open source static site generator available under the [Apache Licence 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+Hi, my name is Piotr Fraszczak, Full Stack Engeener from Poland.
+My current role is .Net Full Stack Developer with Angular in one of biggest polish software companies.
 
-Hugo makes use of a variety of open source projects including:
+In the industry for over 2 years. Most of my time spend for developing new features.
+Solving problems with JavaScript/TypeScript, Angular, .Net/.Net Core and C#. I care about performance and developer experience.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+All time working, to improve coding skills.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
+How can i help you?
 
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
+[GitHub](https://github.com/Fraszczak) Want take a look my current non commercial projects?
 
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+[Blog](/posts/) Looking for interesting software topics?
+
+[Projects](/projects/) Want read more about the projects which part I was or I am right now?
+
+[Contact](/contact/) Want contact me?
