@@ -18,6 +18,7 @@ description = "Jajoglowy personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack Developer"]
 avatarURL = "images/avatar.jpg"
+signatureURL = "images/signature/signature.png"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2022
