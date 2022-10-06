@@ -18,8 +18,8 @@ description = "Jajoglowy personal website"
 keywords = "blog,developer,personal"
 info = ["Full Stack Developer"]
 avatarURL = "images/avatar.jpg"
-# lightSignatureURL = "images/signature/signature.png"
-# darkSignatureURL = "images/signature/signature_light.png"
+# lightSignatureURL = "images/signature/signature.svg"
+# darkSignatureURL = "images/signature/signature-light.svg"
 #gravatar = "john.doe@example.com"
 dateFormat = "January 2, 2006"
 since = 2022
@@ -141,55 +141,56 @@ url = "https://www.linkedin.com/in/12071995/"
 # rel = "alternate"
 # type = "application/rss+xml"
 
+[languages.pl.params]
+author = "Piotr Frąszczak"
+info = "Full Stack Developer"
+description = "strona osobista Jajogłowy"
+keywords = "blog,strona internetowa,osobista"
+
 [languages.en]
 languageName = "EN"
+title = "Jajoglowy"
+
+[languages.pl]
+languageName = "PL"
+title = "Jajogłowy"
 
 [[languages.en.menu.main]]
 name = "About"
 weight = 1
 url = "about/"
 
+[[languages.pl.menu.main]]
+name = "O mnie"
+weight = 1
+url = "about/"
+
 [[languages.en.menu.main]]
 name = "Blog"
 weight = 2
-url = "posts/"
+url = "blog/"
 
-[[languages.en.menu.main]]
-name = "Projects"
-weight = 3
-url = "projects/"
+[[languages.pl.menu.main]]
+name = "Blog"
+weight = 2
+url = "blog/"
 
 [[languages.en.menu.main]]
 name = "Contact me"
 weight = 5
 url = "contact/"
 
-[languages.pt-pl]
-languageName = "PL"
-title = "Jajogłowy"
-
-[languages.pt-pl.params]
-author = "Piotr Frąszczak"
-info = "Full Stack Developer"
-description = "strona osobista Jajogłowy"
-keywords = "blog,strona internetowa,osobista"
-
-[[languages.pt-pl.menu.main]]
-name = "O mnie"
-weight = 1
-url = "about/"
-
-[[languages.pt-pl.menu.main]]
-name = "Blog"
-weight = 2
-url = "posts/"
-
-[[languages.pt-pl.menu.main]]
-name = "Projekty"
-weight = 3
-url = "projects/"
-
-[[languages.pt-pl.menu.main]]
+[[languages.pl.menu.main]]
 name = "Skontaktuj się ze mną"
 weight = 5
 url = "contact/"
+
+# [[languages.en.menu.main]]
+# name = "Projects"
+# weight = 3
+# url = "projects/"
+
+# [[languages.pt-pl.menu.main]]
+# name = "Projekty"
+# weight = 3
+# url = "projects/"
