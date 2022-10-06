@@ -21,7 +21,10 @@
       {{ block "content" . }}{{ end }}
     </div>
 
-    {{ partial "footer.html" . }}
+    {{  $url := trim .Page.RelPermalink "/"}}
+    {{ if in $url "blog" }}
+      {{ partial "footer.html" . }}
+    {{ end }}
   </main>
 
   {{ if .HasShortcode "mermaid" }}
