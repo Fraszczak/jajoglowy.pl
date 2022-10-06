@@ -1,10 +1,10 @@
-+++
-title = "About"
-description = "Jajoglowy, created by passionate for passionates"
-date = "2022-09-26"
-aliases = ["about-us", "about-jajoglowy", "contact"]
-author = "Piotr Fraszczak"
-+++
+---
+title: "About"
+description: "Jajoglowy, created by passionate for passionates"
+date: "2022-09-26"
+aliases: ["about-us", "about-jajoglowy", "contact"]
+author: "Piotr Fraszczak"
+---
 
 Hi, my name is Piotr Fraszczak, Full Stack Engeener from Poland.
 My current role is .Net Full Stack Developer with Angular in one of biggest polish software companies.

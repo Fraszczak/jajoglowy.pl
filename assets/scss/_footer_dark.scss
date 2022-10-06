@@ -1,0 +1,18 @@
+@mixin footer_dark {
+  .footer {
+    fill: #FFFFFF;
+    img {
+      background-color: $link-color-dark;
+    }
+  }
+}
+
+body.colorscheme-dark {
+  @include footer_dark();
+}
+
+body.colorscheme-auto {
+  @media (prefers-color-scheme: dark) {
+    @include footer_dark();
+  }
+}
