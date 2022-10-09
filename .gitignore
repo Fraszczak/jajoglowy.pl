@@ -1,3 +1,18 @@
-/public
+# development folders
+public
 _gen/
+
+#hugo coder
 themes
+
+# examples article with md struct
+emoji-support.md
+external-post.md
+html-and-css-only-tabs.md
+markdown-syntax.md
+math-typesetting.md
+mermaid-support.md
+more-rich-content.md
+placeholder-text.md
+rich-content.md
+example.md
