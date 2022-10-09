@@ -6,5 +6,7 @@ aliases: ["blog"]
 author: "Piotr Fraszczak"
 ---
 
+Artykuły zostały podzielone na serie według tematów którch dotyczą. Poniżej zamieszczona lista zawiera odnośniki, częstuj się :)
 
-[Wersjonowanie API](/blog/api-versioning)
+[Seria artykułów o C#](/blog/about-CSharp) <!--more-->
+

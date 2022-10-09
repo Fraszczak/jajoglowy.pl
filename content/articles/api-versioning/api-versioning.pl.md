@@ -1,126 +1,39 @@
 ---
-title: API Versioning
-description: Article about how to versioning api
-date: 2022-10-04
-aliases: [api-versioning, api, versioning]
+title: Wersjonowanie API
+description: Artykuł poruszający temat wersjonowania API
+date: 2022-10-08
+aliases: [api-versioning, api, wersjonowanie API]
 author: Piotr Fraszczak
 url: blog/api-versioning
 ---
 
+### First things first
 
-## Paragraph
+Temat wersjonowania API warto zacząć od tego [Czym jest API](/blog/api-c#). Gdy już wiem jak działa, wiemy też, że istnieje żeby umożliwić wymianę danych, komunikację.
+Gdy interfejs użytkownika się zmieni, w najlepszym razie użytkownicy muszą się do niego ponownie przyzwyczaić. Gdy zmienia się API, a program klienta nie jest przygotowany na zmiany, kończy działanie błędem. <!--more-->
+Gdy API jest publiczne, prawdopodobnie ma więcej niż jedną aplikacje kliencką. Zmiany w kodzie możemy wersjonować, dlaczego by więc nie wersjonować całego API?
 
-Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.
+### Wytyczne
 
-Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.
+Wszystkie interfejsy API zgodne z wytycznymi [Microsoft REST API ](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md) MUSZĄ obsługiwać jawne przechowywanie wersji. Niezwykle ważne jest, aby klienci mogli liczyć na to, że usługi będą stabilne w czasie, a usługi mogą dodawać funkcje i wprowadzać zmiany.
 
-## Blockquotes
+Usługi są wersjonowane przy użyciu schematu wersjonowania Major.Minor. Usługi MOGĄ wybrać schemat wersji tylko „główny”, w którym to przypadku dorozumiane jest „.0” i obowiązują wszystkie inne zasady opisane w tej sekcji.
 
-The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a `footer` or `cite` element, and optionally with in-line changes such as annotations and abbreviations.
+### Obsługiwane są dwie opcje określania wersji żądania REST API:
 
-#### Blockquote without attribution
+{{< tabgroup align="right" style="code" >}}
+  {{< tab name="Osadzone w ścieżce adresu URL" >}}
 
-> Tiam, ad mint andaepu dandae nostion secatur sequo quae.
-> **Note** that you can use *Markdown syntax* within a blockquote.
-
-#### Blockquote with attribution
-
-> Don't communicate by sharing memory, share memory by communicating.<br>
-> — <cite>Rob Pike[^1]</cite>
-
-[^1]: The above quote is excerpted from Rob Pike's [talk](https://www.youtube.com/watch?v=PAAkCSZUG1c) during Gopherfest, November 18, 2015.
-
-## Tables
-
-Tables aren't part of the core Markdown spec, but Hugo supports them out-of-the-box.
-
-   Name | Age
---------|------
-    Bob | 27
-  Alice | 23
-
-#### Inline Markdown within tables
-
-| Italics   | Bold     | Code   |
-| --------  | -------- | ------ |
-| *italics* | **bold** | `code` |
-
-## Code Blocks
-
-#### Code block with backticks
-
-```html
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
+```Osadzone w ścieżce adresu URL
+https://api.twoja-sciezka.pl/v1.0/products/users
 ```
 
-#### Code block indented with four spaces
+  {{< /tab >}}
+  {{< tab name="Jako parametr ciągu zapytania adresu URL" >}}
 
-    <!doctype html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <title>Example HTML5 Document</title>
-    </head>
-    <body>
-      <p>Test</p>
-    </body>
-    </html>
+```Jako parametr ciągu zapytania adresu URL
+https://api.twoja-sciezka.pl/products/users?api-version=1.0
+```
 
-#### Code block with Hugo's internal highlight shortcode
-{{< highlight html >}}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Example HTML5 Document</title>
-</head>
-<body>
-  <p>Test</p>
-</body>
-</html>
-{{< /highlight >}}
-
-## List Types
-
-#### Ordered List
-
-1. First item
-2. Second item
-3. Third item
-
-#### Unordered List
-
-* List item
-* Another item
-* And another item
-
-#### Nested list
-
-* Fruit
-  * Apple
-  * Orange
-  * Banana
-* Dairy
-  * Milk
-  * Cheese
-
-## Other Elements — abbr, sub, sup, kbd, mark
-
-<abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.
-
-H<sub>2</sub>O
-
-X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup>
-
-Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.
-
-Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.
+  {{< /tab >}}
+{{< /tabgroup >}}
