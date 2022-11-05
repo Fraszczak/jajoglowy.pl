@@ -17,7 +17,7 @@ All time working, to improve coding skills.
 
 <!-- [GitHub](https://github.com/Fraszczak) Want take a look my current non commercial projects? -->
 
-Check out my [blog](/posts/) 
+Check out my [blog](/blog/) 
 
 <!-- [Projects](/projects/) Want read more about the projects which part I was or I am right now? -->
 
