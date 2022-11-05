@@ -12,4 +12,6 @@ Program napisany w tym języku kompilowany jest do języka Common Intermediate L
 
 # List artykułów
 
-[Api Versioning](/blog/api-versioning)
+ [Api Versioning](/pl/blog/api-versioning)
+
+ [Swagger Versioning](/pl/blog/swagger-versioning)
