@@ -7,13 +7,4 @@ author: Piotr Fraszczak
 url: blog/swagger-versioning
 ---
 
-
-# Wstęp {id="First things first"}
-
-  xyz
-
-  
-######
-## Podsumowanie {id="summary"}
-
-  xyz
+...in preparation

@@ -8,13 +8,13 @@ url: blog/api-versioning
 ---
 
 Spis treści: <!--more-->
-* [Wstęp]({{< ref "api-versioning.pl.md#First things first" >}})
-  * [Wytyczne]({{< ref "api-versioning.pl.md#Wytyczne" >}})
-  * [Paczki NuGet]({{< ref "api-versioning.pl.md#NuGet" >}})
-  * [Konfiguracja]({{< ref "api-versioning.pl.md#configuration" >}})
-* [Atrybuty]({{< ref "api-versioning.pl.md#atrybutes" >}})
+* [Wstęp]({{<           ref "api-versioning.pl.md#First things first" >}})
+  * [Wytyczne]({{<      ref "api-versioning.pl.md#Guidelines" >}})
+  * [Paczki NuGet]({{<  ref "api-versioning.pl.md#NuGet" >}})
+  * [Konfiguracja]({{<  ref "api-versioning.pl.md#configuration" >}})
+* [Atrybuty]({{<        ref "api-versioning.pl.md#attributes" >}})
 * [Przykład użycia]({{< ref "api-versioning.pl.md#example" >}})
-* [Podsumowanie]({{< ref "api-versioning.pl.md#summary" >}})
+* [Podsumowanie]({{<    ref "api-versioning.pl.md#summary" >}})
 
 
 
@@ -23,13 +23,14 @@ Spis treści: <!--more-->
 
   Temat wersjonowania API warto zacząć od tego [Czym jest API](/pl/blog/api-c#). Gdy już wiem jak działa, wiemy też, że istnieje żeby umożliwić wymianę danych, komunikację.
   Gdy interfejs użytkownika się zmieni, w najlepszym razie użytkownicy muszą się do niego ponownie przyzwyczaić. Gdy zmienia się API, a program klienta nie jest przygotowany na zmiany, kończy działanie błędem. <!--more-->
+
   Gdy API jest publiczne, prawdopodobnie ma więcej niż jedną aplikacje kliencką. Zmiany w kodzie możemy wersjonować, dlaczego by więc nie wersjonować całego API?
 
-  ## Wytyczne {id="Wytyczne"}
+  ## Wytyczne {id="Guidelines"}
 
-  Wszystkie interfejsy API zgodne z wytycznymi [Microsoft REST API ](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md) __*MUSZĄ*__ obsługiwać jawne przechowywanie wersji. Niezwykle ważne jest, aby klienci mogli liczyć na to, że usługi będą stabilne w czasie, a usługi mogą dodawać funkcje i wprowadzać zmiany.
+  Wszystkie interfejsy API zgodne z wytycznymi [Microsoft REST API ](https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md) **MUSZĄ** obsługiwać jawne przechowywanie wersji. Niezwykle ważne jest, aby klienci mogli liczyć na to, że usługi będą stabilne w czasie, a usługi mogą dodawać funkcje i wprowadzać zmiany.
 
-  Usługi są wersjonowane przy użyciu schematu  Major.Minor. Usługi __*MOGĄ*__ wybrać schemat wersji tylko „główny”, w którym to przypadku dorozumiane jest „.0” i obowiązują wszystkie inne zasady opisane w tej sekcji.
+  Usługi są wersjonowane przy użyciu schematu  Major.Minor. Usługi **MOGĄ** wybrać schemat wersji tylko „główny”, w którym to przypadku dorozumiane jest „.0” i obowiązują wszystkie inne zasady opisane w tej sekcji.
 
 
   ## Instalacja - NuGet Packages {id="NuGet"}
@@ -104,7 +105,7 @@ builder.Services.AddApiVersioning(o =>
 ```
 
 
-# Atrybuty {id="atrybutes"}
+# Atrybuty {id="attributes"}
 
 W ramach pakietu mamy do dyspozycji szereg atrybutów, poprzez które wersjonujemy API. Tabelka niżej zawiera je wraz z opisem znaczenia.
 
@@ -141,14 +142,14 @@ Klient chcąc korzystać z funkcjonalności wersjonowanego API, musi uwzględni�
     {{< tab name="Osadzone w ścieżce adresu URL" >}}
 
   ```Osadzone w ścieżce adresu URL
-  https://api.twoja-sciezka.pl/v1.0/products/users
+  https://api.some-url.pl/v1.0/products/users
   ```
 
     {{< /tab >}}
     {{< tab name="Jako parametr ciągu zapytania adresu URL" >}}
 
   ```Jako parametr ciągu zapytania adresu URL
-  https://api.twoja-sciezka.pl/products/users?api-version=1.0
+  https://api.some-url.pl/products/users?api-version=1.0
   ```
 
     {{< /tab >}}

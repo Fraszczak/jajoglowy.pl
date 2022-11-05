@@ -17,7 +17,7 @@ Cały czas pracuje, aby poprawić umiejętności kodowania.
 
 <!-- [GitHub](https://github.com/Fraszczak) Chcesz rzucić okiem na moje obecne projekty niekomercyjne? -->
 
-Sprawdź mojego [bloga](/blog/) 
+Sprawdź mojego [bloga](/pl/blog/) 
 
 <!-- [Projekty](/projects/) Chcesz dowiedzieć się więcej o projektach, w których byłem lub jestem teraz? -->
 

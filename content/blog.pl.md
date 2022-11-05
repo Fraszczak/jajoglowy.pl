@@ -8,6 +8,9 @@ author: "Piotr Fraszczak"
 
 Artykuły zostały podzielone na serie według tematów którch dotyczą. Poniżej zamieszczona lista zawiera odnośniki, częstuj się :)
 
-[Seria artykułów o C#](/pl/blog/about-CSharp) <!--more-->
+* [Article series about C#](/pl/blog/about-CSharp)
+  * [Api Versioning](/pl/blog/api-versioning)
+  * [Swagger Versioning](/pl/blog/swagger-versioning)
 
-[Agile - programowanie zwinne](/blog/agile-programming) <!--more-->
+* [Agile programming](/pl/blog/agile-programming)
+  * [Twelve rules agile programming](/pl/blog/twelve-rules)
