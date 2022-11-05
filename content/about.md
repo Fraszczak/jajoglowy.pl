@@ -15,10 +15,10 @@ Solving problems with JavaScript/TypeScript, Angular, .Net/.Net Core and C#. I c
 All time working, to improve coding skills.
 
 
-[GitHub](https://github.com/Fraszczak) Want take a look my current non commercial projects?
+<!-- [GitHub](https://github.com/Fraszczak) Want take a look my current non commercial projects? -->
 
-[Blog](/posts/) Looking for interesting software topics?
+Check out my [blog](/blog/) 
 
 <!-- [Projects](/projects/) Want read more about the projects which part I was or I am right now? -->
 
-[Contact](/contact/) Want contact me?
+<!-- [Contact](/contact/) Want contact me? -->

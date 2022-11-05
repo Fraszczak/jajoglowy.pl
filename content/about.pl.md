@@ -15,10 +15,10 @@ Na codzień rozwiązuje problemy z JavaScript/TypeScript, Angular, .Net/.Net Cor
 Cały czas pracuje, aby poprawić umiejętności kodowania.
 
 
-[GitHub](https://github.com/Fraszczak) Chcesz rzucić okiem na moje obecne projekty niekomercyjne?
+<!-- [GitHub](https://github.com/Fraszczak) Chcesz rzucić okiem na moje obecne projekty niekomercyjne? -->
 
-[Blog](/posts/) Szukasz interesujących tematów dotyczących oprogramowania?
+Sprawdź mojego [bloga](/blog/) 
 
 <!-- [Projekty](/projects/) Chcesz dowiedzieć się więcej o projektach, w których byłem lub jestem teraz? -->
 
-[Kontakt](/contact/) Chcesz się ze mną skontaktować?
+<!-- [Kontakt](/contact/) Chcesz się ze mną skontaktować? -->

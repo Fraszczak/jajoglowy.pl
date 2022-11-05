@@ -1,5 +1,5 @@
 ---
-title: Blog - seria C#
+title: Seria C#
 description: Strona zawiera wszystkie opublikowane artykuły o C#
 date: 2022-10-08
 aliases: [blog, o C#, artykuły, seria artykułów o C#]
