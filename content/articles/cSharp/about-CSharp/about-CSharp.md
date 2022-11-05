@@ -1,5 +1,5 @@
 ---
-title: Blog - C# series
+title: C# series
 description: This page contains all published article about C#
 date: 2022-10-08
 aliases: [blog, about C#, article, article series about C#]

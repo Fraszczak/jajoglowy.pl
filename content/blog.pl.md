@@ -10,3 +10,4 @@ Artykuły zostały podzielone na serie według tematów którch dotyczą. Poniż
 
 [Seria artykułów o C#](/blog/about-CSharp) <!--more-->
 
+[Agile - programowanie zwinne](/blog/agile-programming) <!--more-->
